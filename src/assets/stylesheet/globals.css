@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+  background:  #ececec;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 768px) { 
+  .toggle-active {
+    display: block;
+  }
+  .toggle-inactive {
+    display: block;
+  }
+}
+.toggle-active {
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+}
+.toggle-inactive {
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+  display: none;
+}
+
+.menu-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: -25rem;
+  z-index: 30;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 30;
+  margin: auto;
+  left: 0;
+  background: white;
+}
+
+.container-active {
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+}
+.container-inactive {
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 0%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+  display: none;
+  right: 0%;
+
+}
+.cart-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  z-index: 30;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: auto;
+  z-index: 50;
+  margin: auto;
+  right: 0;
+  background: white;
+}
+
+
+.search-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  background: rgb(223, 223, 223);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  right: -100%;
+}
+
+.search-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 50;
+  margin: auto;
+  background: white;
+  width: 100%;
+  right: 0%;
+}
